@@ -1,0 +1,121 @@
+{
+  "Białystok": {
+    "Dative": "w Białymstoku",
+    "Street": "Sienkiewicza",
+    "Building_number": "84",
+    "Zip_code": "15-950",
+    "City": "Białystok"
+  },
+    "Bydgoszcz": {
+      "Dative": "w Bydgoszczy",
+      "Street": "Jana Kazimierza",
+      "Building_number": "5",
+      "Zip_code": "85-035",
+      "City": "Bydgoszcz"
+  },
+    "Gdańsk": {
+      "Dative": "w Gdańsku",
+      "Street": "al. Zwycięstwa",
+      "Building_number": "16/17",
+      "Zip_code": "80-219",
+      "City": "Gdańsk"
+  },
+    "Gliwice": {
+      "Dative": "w Gliwicach",
+      "Street": "Prymasa Stefana Wyszyńskiego",
+      "Building_number": "2",
+      "Zip_code": "44-100",
+      "City": "Gliwice"
+  },
+    "Gorzów Wielkopolski": {
+      "Dative": "w Gorzowie Wielkopolskim",
+      "Street": "Dąbrowskiego",
+      "Building_number": "13",
+      "Zip_code": "",
+      "City": "Gorzów Wielkopolski"
+  },
+    "Kielce": {
+      "Dative": "w Kielcach",
+      "Street": "Prosta",
+      "Building_number": "10",
+      "Zip_code": "25-366",
+      "City": "Kielce"
+  },
+    "Kraków": {
+      "Dative": "w Krakowie",
+      "Street": "Rakowicka",
+      "Building_number": "10",
+      "Zip_code": "31-511",
+      "City": "Kraków"
+  },
+    "Lublin": {
+      "Dative": "w Lublinie",
+      "Street": "M.C. Skłodowskiej",
+      "Building_number": "40",
+      "Zip_code": "20-029",
+      "City": "Lublin"
+  },
+    "Łódź": {
+      "Dative": "w Łodzi",
+      "Street": "Piotrkowska 135",
+      "Building_number": "40",
+      "Zip_code": "90-434",
+      "City": "Łódź"
+  },
+    "Opole": {
+      "Dative": "w Opolu",
+      "Street": "Kośnego",
+      "Building_number": "70",
+      "Zip_code": "45-372",
+      "City": "Opole"
+  },
+    "Olsztyn": {
+      "Dative": "w Olsztynie",
+      "Street": "Emilii Plater",
+      "Building_number": "1",
+      "Zip_code": "10-562",
+      "City": "Olsztyn"
+  },
+    "Poznań": {
+      "Dative": "w Poznaniu",
+      "Street": "Ratajczaka",
+      "Building_number": "10/12",
+      "Zip_code": "61-815 ",
+      "City": "Poznań"
+  },
+    "Rzeszów": {
+      "Dative": "w Rzeszowie",
+      "Street": "Kraszewskiego",
+      "Building_number": "4a",
+      "Zip_code": "35-016",
+      "City": "Rzeszów"
+  },
+    "Szczecin": {
+      "Dative": "w Szczecinie",
+      "Street": "Staromłyńska",
+      "Building_number": "10",
+      "Zip_code": "70-561",
+      "City": "Szczecin"
+  },
+    "Warszawa": {
+      "Dative": "w Warszawie",
+      "Street": "Jasna",
+      "Building_number": "2/4",
+      "Zip_code": "00-013",
+      "City": "Warszawa"
+  },
+    "Wrocław": {
+      "Dative": "we Wrocławiu",
+      "Street": "św. Mikołaja",
+      "Building_number": "78/79",
+      "Zip_code": "50-126",
+      "City": "Wrocław"
+  },
+    "NSA": {
+      "Dative": "",
+      "Street": "Gabriela Piotra Boduena",
+      "Building_number": "3/5",
+      "Zip_code": "00-011",
+      "City": "Warszawa"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "Biała Podlaska": {
+    "Dative": "w Białej Podlaskiej",
+    "Street": "ul. Piłsudskiego",
+    "Building_number": 15,
+    "Zip_code": "21-500",
+    "City": "Biała Podlaska"
+  },
+  "Białystok": {
+    "Dative": "w Białymstoku",
+    "Street": "ul. Mickiewicza",
+    "Building_number": "3/5",
+    "Zip_code": "15-213",
+    "City": "Białystok"
+  },
+  "Bielsko-Biała": {
+    "Dative": "w Bielsku-Białej",
+    "Street": "u. 3 Maja",
+    "Building_number": 1,
+    "Zip_code": "43-300",
+    "City": "Bielsko-Biała"
+  },
+  "Bydgoszcz": {
+    "Dative": "w Bydgoszczy",
+    "Street": "ul. Jagiellońska",
+    "Building_number": 3,
+    "Zip_code": "85-950",
+    "City": "Bydgoszcz"
+  },
+  "Chełm": {
+    "Dative": "w Chełmie",
+    "Street": "pl. Niepodległości",
+    "Building_number": 1,
+    "Zip_code": "22-100",
+    "City": "Chełm"
+  },
+  "Ciechanów": {
+    "Dative": "w Ciechanowie",
+    "Street": "ul. Rzeczkowska",
+    "Building_number": 6,
+    "Zip_code": "06-400",
+    "City": "Ciechanów"
+  },
+  "Częstochowa": {
+    "Dative": "w Częstochowie",
+    "Street": "al. Niepodległości",
+    "Building_number": "20/22",
+    "Zip_code": "42-200",
+    "City": "Częstochowa"
+  },
+  "Elbląg": {
+    "Dative": "w Elblągu",
+    "Street": "ul. Związku Jaszczurczego",
+    "Building_number": "14a",
+    "Zip_code": "82-300",
+    "City": "Elbląg"
+  },
+  "Gdańsk": {
+    "Dative": "w Gdańsku",
+    "Street": "ul. Podwale Przedmiejskie",
+    "Building_number": 30,
+    "Zip_code": "80-824",
+    "City": "Gdańsk"
+  },
+  "Gorzów Wielkopolski": {
+    "Dative": "w Gorzowie Wielkopolskim",
+    "Street": "ul. B. Chrobrego",
+    "Building_number": 31,
+    "Zip_code": "66-400",
+    "City": "Gorzów Wielkopolski"
+  },
+  "Jelenia Góra": {
+    "Dative": "w Jeleniej Górze",
+    "Street": "ul. Górna",
+    "Building_number": "10-11",
+    "Zip_code": "58-500",
+    "City": "Jelenia Góra"
+  },
+  "Kalisz": {
+    "Dative": "w Kaliszu",
+    "Street": "ul. Częstochowska",
+    "Building_number": 12,
+    "Zip_code": "62-800",
+    "City": "Kalisz"
+  },
+  "Katowice": {
+    "Dative": "w Katowicach",
+    "Street": "ul. Dąbrowskiego",
+    "Building_number": 23,
+    "Zip_code": "40-032",
+    "City": "Katowice"
+  },
+  "Kielce": {
+    "Dative": "w Kielcach",
+    "Street": "al. IX Wieków Kielc",
+    "Building_number": 3,
+    "Zip_code": "25-516",
+    "City": "Kielce"
+  },
+  "Konin": {
+    "Dative": "w Koninie",
+    "Street": "ul. 1 Maja",
+    "Building_number": 7,
+    "Zip_code": "62-510",
+    "City": "Konin"
+  },
+  "Koszalin": {
+    "Dative": "w Koszalinie",
+    "Street": "ul. W. Andersa",
+    "Building_number": 34,
+    "Zip_code": "75-950",
+    "City": "Koszalin"
+  },
+  "Kraków": {
+    "Dative": "w Krakowie",
+    "Street": "ul. J. Lea",
+    "Building_number": 10,
+    "Zip_code": "30-048",
+    "City": "Kraków"
+  },
+  "Krosno": {
+    "Dative": "w Krośnie",
+    "Street": "ul. Bieszczadzka",
+    "Building_number": 1,
+    "Zip_code": "38-400",
+    "City": "Krosno"
+  },
+  "Legnica": {
+    "Dative": "w Legnicy",
+    "Street": "pl. Słowiański",
+    "Building_number": 1,
+    "Zip_code": "59-220",
+    "City": "Legnica"
+  },
+  "Leszno": {
+    "Dative": "w Lesznie",
+    "Street": "ul. Słowiańska",
+    "Building_number": 54,
+    "Zip_code": "64-100",
+    "City": "Leszno"
+  },
+  "Lublin": {
+    "Dative": "w Lublinie",
+    "Street": "ul. Zana",
+    "Building_number": "38c",
+    "Zip_code": "20-601",
+    "City": "Lublin"
+  },
+  "Łomża": {
+    "Dative": "w Łomży",
+    "Street": "ul. Nowa",
+    "Building_number": 2,
+    "Zip_code": "18-400",
+    "City": "Łomża"
+  },
+  "Łódź": {
+    "Dative": "w Łodzi",
+    "Street": "ul. Piotrkowska",
+    "Building_number": 86,
+    "Zip_code": "90-103",
+    "City": "Łódź"
+  },
+  "Nowy Sącz": {
+    "Dative": "w Nowym Sączu",
+    "Street": "ul. Gorzkowska",
+    "Building_number": 30,
+    "Zip_code": "33-300",
+    "City": "Nowy Sącz"
+  },
+  "Olsztyn": {
+    "Dative": "w Olsztynie",
+    "Street": "ul. Kajki",
+    "Building_number": "10/12",
+    "Zip_code": "10-547",
+    "City": "Olsztyn"
+  },
+  "Opole": {
+    "Dative": "w Opolu",
+    "Street": "ul. Oleska",
+    "Building_number": "19a",
+    "Zip_code": "45-052",
+    "City": "Opole"
+  },
+  "Ostrołęka": {
+    "Dative": "w Ostrołęce",
+    "Street": "ul. gen. A. E. Fieldorfa \"Nila\"",
+    "Building_number": 15,
+    "Zip_code": "07-410",
+    "City": "Ostrołęka"
+  },
+  "Piła": {
+    "Dative": "w Pile",
+    "Street": "ul. Dzieci Polskich",
+    "Building_number": 26,
+    "Zip_code": "64-920",
+    "City": "Piła"
+  },
+  "Piotrków Trybunalski": {
+    "Dative": "w Piotrkowie Trybunalskim",
+    "Street": "ul. Słowackiego",
+    "Building_number": 19,
+    "Zip_code": "97-300",
+    "City": "Piotrków Tryb."
+  },
+  "Płock": {
+    "Dative": "w Płocku",
+    "Street": "ul. Kolegialna",
+    "Building_number": "20b",
+    "Zip_code": "09-402",
+    "City": "Płock"
+  },
+  "Poznań": {
+    "Dative": "w Poznaniu",
+    "Street": "al. Niepodległości",
+    "Building_number": "16/18",
+    "Zip_code": "61-713",
+    "City": "Poznań"
+  },
+  "Przemyśl": {
+    "Dative": "w Przemyślu",
+    "Street": "ul. Borelowskiego",
+    "Building_number": 1,
+    "Zip_code": "37-700",
+    "City": "Przemyśl"
+  },
+  "Radom": {
+    "Dative": "w Radomiu",
+    "Street": "ul. Żeromskiego",
+    "Building_number": 53,
+    "Zip_code": "26-600",
+    "City": "Radom"
+  },
+  "Rzeszów": {
+    "Dative": "w Rzeszowie",
+    "Street": "ul. Miedziana",
+    "Building_number": "4a",
+    "Zip_code": "35-102",
+    "City": "Rzeszów"
+  },
+  "Siedlce": {
+    "Dative": "w Siedlcach",
+    "Street": "ul. Piłsudskiego",
+    "Building_number": 38,
+    "Zip_code": "08-110",
+    "City": "Siedlce"
+  },
+  "Sieradz": {
+    "Dative": "w Sieradzu",
+    "Street": "pl. Wojewódzki",
+    "Building_number": 3,
+    "Zip_code": "98-200",
+    "City": "Sieradz"
+  },
+  "Skierniewice": {
+    "Dative": "w Skierniewicach",
+    "Street": "ul. Trzcińska",
+    "Building_number": 18,
+    "Zip_code": "96-100",
+    "City": "Skierniewice"
+  },
+  "Słupsk": {
+    "Dative": "w Słupsku",
+    "Street": "ul. Jana Pawła II",
+    "Building_number": 1,
+    "Zip_code": "76-200",
+    "City": "Słupsk"
+  },
+  "Suwałki": {
+    "Dative": "w Suwałkach",
+    "Street": "ul. Gen. Kazimierza Pułaskiego",
+    "Building_number": 73,
+    "Zip_code": "16-400",
+    "City": "Suwałki"
+  },
+  "Szczecin": {
+    "Dative": "w Szczecinie",
+    "Street": "pl. Batorego",
+    "Building_number": 4,
+    "Zip_code": "70-207",
+    "City": "Szczecin"
+  },
+  "Tarnobrzeg": {
+    "Dative": "w Tarnobrzegu",
+    "Street": "ul. Świętej Barbary",
+    "Building_number": 12,
+    "Zip_code": "39-400",
+    "City": "Tarnobrzeg"
+  },
+  "Tarnów": {
+    "Dative": "w Tarnowie",
+    "Street": "ul. Bema",
+    "Building_number": 17,
+    "Zip_code": "33-100",
+    "City": "Tarnów"
+  },
+  "Toruń": {
+    "Dative": "w Toruniu",
+    "Street": "ul. Targowa",
+    "Building_number": "13/15",
+    "Zip_code": "87-100",
+    "City": "Toruń"
+  },
+  "Wałbrzych": {
+    "Dative": "w Wałbrzychu",
+    "Street": "al. Wyzwolenia",
+    "Building_number": 24,
+    "Zip_code": "58-300",
+    "City": "Wałbrzych"
+  },
+  "Warszawa": {
+    "Dative": "w Warszawie",
+    "Street": "ul. Obozowa",
+    "Building_number": 57,
+    "Zip_code": "01-161",
+    "City": "Warszawa"
+  },
+  "Włocławek": {
+    "Dative": "we Włocławku",
+    "Street": "ul. Kilińskiego",
+    "Building_number": 2,
+    "Zip_code": "87-800",
+    "City": "Włocławek"
+  },
+  "Wrocław": {
+    "Dative": "we Wrocławiu",
+    "Street": "pl. Powstańców Warszawy",
+    "Building_number": 1,
+    "Zip_code": "50-951",
+    "City": "Wrocław"
+  },
+  "Zamość": {
+    "Dative": "w Zamościu",
+    "Street": "ul. Partyzantów",
+    "Building_number": 3,
+    "Zip_code": "22-400",
+    "City": "Zamość"
+  },
+  "Zielona Góra": {
+    "Dative": "w Zielonej Górze",
+    "Street": "al. Niepodległości",
+    "Building_number": 7,
+    "Zip_code": "65-048",
+    "City": "Zielona Góra"
+  }
+}
