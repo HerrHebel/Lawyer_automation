@@ -1,34 +1,32 @@
 import json
 
 
-def get_wsa_address(context):
+def get_authority_address(search_type, context):
     """
     The function finds address data of appropriate WSA.
     :param context: dict, Set of data to be used in docx document creation the function is going to write the output to.
     :return: dict, input dict with WSA address data saved into it
     """
-    # WSA address search
-    with open("authority_data/wsa_addresses.json") as wsa_address_data:
-        body_name = context["wsa_name"]
+    if search_type == "wsa":
+        json_address_file_path = "authority_data/wsa_addresses.json"
+        body_type = "wsa"
+    elif search_type == "sko":
+        json_address_file_path = "authority_data/sko_addresses.json"
+        body_type = "sko"
+    with open(json_address_file_path) as wsa_address_data:
         wsa_address_json = json.load(wsa_address_data)
-        context["wsa_dat"] = f"{wsa_address_json[body_name]['Dative']}"
-        context[
-            "wsa_street_name_number"] = f"{wsa_address_json[body_name]['Street']} {wsa_address_json[body_name]['Building_number']}"
-        context["wsa_zip_city"] = f"{wsa_address_json[body_name]['Zip_code']} {wsa_address_json[body_name]['City']}"
-    return context
-
-
-def get_sko_address(context):
-    """
-    The function finds address data of appropriate SKO.
-    :param context: dict, Set of data to be used in docx document creation the function is going to write the output to.
-    :return: dict, input dict with WSA address data saved into it
-    """
-    with open("authority_data/sko_addresses.json") as sko_address_data:
-        body_name = context["sko_name"]
-        sko_address_json = json.load(sko_address_data)
-        context["sko_dat"] = f"{sko_address_json[body_name]['Dative']}"
-        context[
-            "sko_street_name_number"] = f"{sko_address_json[body_name]['Street']} {sko_address_json[body_name]['Building_number']}"
-        context["sko_zip_city"] = f"{sko_address_json[body_name]['Zip_code']} {sko_address_json[body_name]['City']}"
+        body_name_correct = False
+        while not body_name_correct:
+            try:
+                body_name = context[f"{body_type}_name"]
+                context[f"{body_type}_dat"] = f"{wsa_address_json[body_name]['Dative']}"
+                context[f"{body_type}_street_name_number"] = f"{wsa_address_json[body_name]['Street']} " \
+                                                    f"{wsa_address_json[body_name]['Building_number']}"
+                context[f"{body_type}_zip_city"] = f"{wsa_address_json[body_name]['Zip_code']} " \
+                                                   f"{wsa_address_json[body_name]['City']}"
+                body_name_correct = True
+            except KeyError:
+                corrected_body_name = input(f"{body_type.upper()} in {body_name} "
+                                            f"not found. Please enter correct WSA location.\n")
+                context[f"{body_type}_name"] = corrected_body_name
     return context
