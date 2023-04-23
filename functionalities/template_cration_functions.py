@@ -3,46 +3,33 @@ from functionalities.CRM_scraping_scripts import crm_client_data_scrape
 from functionalities.docx_functionalities import save_doc, save_envelope
 
 
-def wniosek_o_uzasadnienie():
+
+def wniosek_o_przyznanie_świadczenia():
     list_of_context = []
     add_another_client = True
     while add_another_client:
         # Context inputs:
-        crm_case_number_input = input("Enter CRM case number:\n")
-        wsa_name_input = input("Enter WSA city:\n")
-        sko_name_input = input("Enter SKO city:\n")
-        wsa_case_number_input = input("Enter case number:\n")
-        ruling_date_input = input("Enter ruling date:\n")
+        client_gen_input = input("Enter client first letter of client's name and their surname in genitive:\n")
+        client_dat_input = input("Enter client's full name and surname in dative:\n")
+        client_relation_input = input("Enter client's relation to the disabled:\n")
+        dis_cert_input = input("Does the disabled have a PZON disability certificate?:\n")
+        disabled_name_input = input("Enter name and surname of the disabled:\n")
+        pzon_city_input = input("Enter PZON/MZON/WZON location:\n")
 
-        uzas_context = {
-            "crm_case_number": crm_case_number_input,
-            "client_surname_name": "",
-            "client_street_name_number": "",
-            "client_zip_city": "",
-            "wsa_name": wsa_name_input,
-            "wsa_dat": "",
-            "wsa_street_name_number ": "",
-            "wsa_zip_city": "",
-            "sko_name": sko_name_input,
-            "sko_dat": "",
-            "sko_street_name_number": "",
-            "sko_zip_city": "",
-            "case_number": wsa_case_number_input,
-            "ruling_date": ruling_date_input,
+        if dis_cert_input == "y":
+            dis_cert_input = True
+
+        motion_context = {
+            "client_gen": client_gen_input,
+            "client_dat": client_dat_input,
+            "client_relation": client_relation_input,
+            "dis_cert": dis_cert_input,
+            "disabled_name": disabled_name_input,
+            "pzon_city": pzon_city_input,
         }
 
-        get_authority_address(search_type="sko", context=uzas_context)
-        get_authority_address(search_type="wsa", context=uzas_context)
 
-        # queue and continue condition evaluation
-        print(f"Client input no. {len(list_of_context) + 1}\n"
-              f"CRM case number: {crm_case_number_input}\n"
-              f"WSA: {uzas_context['wsa_name']}\n"
-              f"SKO: {uzas_context['sko_name']}\n"
-              f"WSA case number: {wsa_case_number_input}\n"
-              f"Ruling date: {ruling_date_input}")
-
-        list_of_context.append(uzas_context)
+        list_of_context.append(motion_context)
 
         print("Client data added successfully!")
 
@@ -53,7 +40,6 @@ def wniosek_o_uzasadnienie():
             add_another_client = False
 
     for record in list_of_context:
-        crm_client_data_scrape(context=record)
         save_doc(template_path="docs/templates/wniosek_o_uzasadnienie.docx", context=record,
                  document_name="wniosek o uzasadnienie", saving_dir="docs/saved_files/wnioski o uzasadnienie/")
         save_envelope(context=record, addressee="WSA", operation_number=list_of_context.index(record) + 1,

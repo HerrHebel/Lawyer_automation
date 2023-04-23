@@ -13,6 +13,7 @@ load_dotenv("env_var/.env")
 username = os.getenv("CRM_USERNAME")
 password = os.getenv("CRM_PASSWORD")
 case_url = os.getenv("CASE_URL")
+crm_url = os.getenv("CRM_URL")
 
 
 def selenium_setup():
@@ -36,9 +37,8 @@ def crm_client_data_scrape(context):
     :return: dict, input dict with WSA address data saved into it
     """
     driver = selenium_setup()
-    case_id = context["crm_case_number"]
     # Login process
-    driver.get(f"{case_url}{case_id}")
+    driver.get(crm_url)
     crm_username_box = driver.find_element(By.XPATH, '//*[@id="loginform-username"]')
     crm_password_box = driver.find_element(By.XPATH, '//*[@id="loginform-password"]')
     crm_login_submit_button = driver.find_element(By.XPATH, '//*[@id="login-form"]/div[2]/button')
@@ -47,25 +47,28 @@ def crm_client_data_scrape(context):
     crm_login_submit_button.click()
     time.sleep(1)
     # Data scraping
-    driver.find_element(By.XPATH, '//*[@id="issue-details"]/div/div[1]/div[1]/fieldset[1]/legend/a').click()
-    time.sleep(1)
-    try:
-        client_name_scrape = driver.find_element(By.XPATH, '/html/body/div/div/section[2]/div/div/div/h1').text
-        client_street_scrape = driver.find_element(By.XPATH, '//*[@id="w1"]/tbody/tr[5]/td').text
-        client_city_scrape = driver.find_element(By.XPATH, '//*[@id="w1"]/tbody/tr[4]/td').text
-        # Data cleaning
-        client_surname_name = client_name_scrape
-        client_street = client_street_scrape
-        client_zip_city = f"{client_city_scrape.split(' - ')[1][1:-1]} {client_city_scrape.split(' - ')[0]}"
-    except NoSuchElementException:
-        print(f"Scraping script failed. Selenium was no able to find appropriate element on CRM website. Please "
-              f"review the file for case no. {context['crm_case_number']}")
-        client_surname_name = f"Failed scrape attempt case number {context['crm_case_number']}"
-        client_street = "Enter data manually"
-        client_zip_city = "Enter data manually"
-    # Saving data to context
-    context["client_surname_name"] = client_surname_name
-    context["client_street_name_number"] = client_street
-    context["client_zip_city"] = client_zip_city
+    for case in context:
+        case_id = case["crm_case_number"]
+        driver.get(f"{case_url}{case_id}")
+        driver.find_element(By.XPATH, '//*[@id="issue-details"]/div/div[1]/div[2]/fieldset[1]/legend/a').click()
+        time.sleep(1)
+        try:
+            client_name_scrape = driver.find_element(By.XPATH, '/html/body/div/div/section[2]/div/div/div/h1').text
+            client_street_scrape = driver.find_element(By.XPATH, '//*[@id="w1"]/tbody/tr[5]/td').text
+            client_city_scrape = driver.find_element(By.XPATH, '//*[@id="w1"]/tbody/tr[4]/td').text
+            # Data cleaning
+            client_surname_name = client_name_scrape
+            client_street = client_street_scrape
+            client_zip_city = f"{client_city_scrape.split(' - ')[1][1:-1]} {client_city_scrape.split(' - ')[0]}"
+        except NoSuchElementException:
+            print(f"Scraping script failed. Selenium was no able to find appropriate element on CRM website. Please "
+                  f"review the file for case no. {case['crm_case_number']}")
+            client_surname_name = f"Failed scrape attempt case number {case['crm_case_number']}"
+            client_street = "Enter data manually"
+            client_zip_city = "Enter data manually"
+        # Saving data to context
+        case["client_surname_name"] = client_surname_name
+        case["client_street_name_number"] = client_street
+        case["client_zip_city"] = client_zip_city
     return context
     driver.quit()
